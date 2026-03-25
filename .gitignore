@@ -1,0 +1,43 @@
+# ============================================================
+# .gitignore — LAB_08 Machine Learning Repository
+# ============================================================
+
+# ------ Datasets (large binary files, download via script) --
+*.zip
+*.tar.gz
+*.tar
+
+# ------ Model Weights (large binary files) ------------------
+*.pt
+*.pth
+*.h5
+*.onnx
+*.weights
+
+# ------ Training Runs Output --------------------------------
+runs/
+
+# ------ Cloned Frameworks (install via requirements.txt) ----
+yolov5/
+
+# ------ Jupyter / IPython -----------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.pyc
+__pycache__/
+*.py[cod]
+
+# ------ Virtual Environments --------------------------------
+.venv/
+venv/
+env/
+
+# ------ OS and Editor Artifacts ----------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ------ Sensitive / Private ---------------------------------
+.env
+secrets.yaml
