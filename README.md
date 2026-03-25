@@ -89,13 +89,3 @@ rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
 - Framework: [Matterport Mask-RCNN](https://github.com/matterport/Mask_RCNN)
 - Dataset format: COCO
 
----
-
-## Results (YOLO11)
-
-| Metric | Value |
-|---|---|
-| mAP@50 | 0.381 |
-| Precision | 0.442 |
-| Recall | 0.446 |
-| Epochs | 5 |
