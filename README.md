@@ -1,11 +1,8 @@
-# LAB_08 — Object Detection & Instance Segmentation
-
-**Course:** 01418362-65 Introduction to Machine Learning  
-**Lab:** LAB 08 — Object Detection and Instance Segmentation
+# Object Detection & Instance Segmentation
 
 ---
 
-## 📋 Overview
+## Overview
 
 This laboratory explores two state-of-the-art deep learning architectures for object detection and instance segmentation:
 
@@ -18,10 +15,10 @@ Both experiments use the **Dog & Cat Objects** dataset, downloaded via the Robof
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-LAB_08/
+dog-cat-object-detection/
 ├── YOLO/
 │   └── YOLOv5.ipynb              # YOLO11 training + evaluation notebook
 ├── Mast-RCNN/
@@ -34,13 +31,13 @@ LAB_08/
 
 ---
 
-## 🔧 Setup & Installation
+## Setup & Installation
 
 ### 1. Clone the Repository
 
 ```bash
 git clone <your-repo-url>
-cd LAB_08
+cd dog-cat-object-detection
 ```
 
 ### 2. Install Dependencies
@@ -73,7 +70,7 @@ rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Name:** Dog & Cat Objects  
 - **Source:** [Roboflow Universe](https://universe.roboflow.com/appledetect/dog_cat_objects/dataset/1)  
@@ -81,7 +78,7 @@ rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
 
 ---
 
-## 🧠 Models
+## Models
 
 ### YOLO11 (Object Detection)
 - Pre-trained weights: `yolo11n.pt` (Nano model)
@@ -94,7 +91,7 @@ rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
 
 ---
 
-## 🏆 Results (YOLO11)
+## Results (YOLO11)
 
 | Metric | Value |
 |---|---|
@@ -102,11 +99,3 @@ rf = Roboflow(api_key=os.environ["ROBOFLOW_API_KEY"])
 | Precision | 0.442 |
 | Recall | 0.446 |
 | Epochs | 5 |
-
----
-
-## 📌 Notes
-
-- Large files (`.zip`, `.pt`, `runs/`, `yolov5/`) are excluded from the repository via `.gitignore`.  
-  Download datasets via the Roboflow notebook cells, and model weights will be auto-downloaded by `ultralytics`.
-- This project was tested on CPU; GPU is strongly recommended for faster training.
